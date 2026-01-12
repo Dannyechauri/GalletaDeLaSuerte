@@ -35,8 +35,10 @@ class galleta:
         return
         
     def loadPhrases(self):
-        file = open('galleta_src/frases.txt','r')
+        file = open('frases.txt','r')
         self.frases = file.readlines()
         file.close()
             
-                
+if __name__ == '__main__':
+    galleta = galleta()
+    galleta.reproducePhrase('Usuario')
